@@ -1,2 +1,3 @@
 const tabs=document.querySelectorAll('.tab');const panels=document.querySelectorAll('.panel');
 tabs.forEach(tab=>tab.addEventListener('click',()=>{tabs.forEach(t=>t.classList.remove('active'));panels.forEach(p=>p.classList.remove('active'));tab.classList.add('active');document.getElementById(tab.dataset.tab).classList.add('active');window.scrollTo({top:0,behavior:'smooth'});}));
+document.querySelectorAll('.payment').forEach(btn=>btn.addEventListener('click',()=>{const statuses=['Pending','Partial','Paid'];let next=statuses[(statuses.indexOf(btn.dataset.status)+1)%statuses.length];btn.dataset.status=next;btn.textContent=next;btn.className='payment '+next.toLowerCase();}));

@@ -1,10 +1,11 @@
-# Egret Relay 2026 v3 Setup Feedback
+# Ragnar Relay Alafia Trail 2026 v4
 
 Changes:
-- Clean app-style visual direction
-- Removed Setup search bar
-- Removed summary cards
-- Attendee Directory uses original spreadsheet-style columns except emergency columns removed
-- Removed Registration Cost
-- Team Formation follows relay order format from source image
-- Emergency Quick View moved to bottom
+- Replaced title with Ragnar Relay Alafia Trail 2026
+- Removed Team column from Attendee Directory
+- Moved Rene Hernandez into Sherpa Directory
+- Payment badges can be toggled in prototype
+- Registration Cost removed
+- Volunteer Missing is flagged in Team Formation
+- Checklist converted into trackable table with original columns:
+  Area, Item, Required, Status, Who, Total
