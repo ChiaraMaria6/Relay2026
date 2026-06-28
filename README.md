@@ -1,12 +1,10 @@
-# Egret Relay 2026 v2 Setup
+# Egret Relay 2026 v3 Setup Feedback
 
-This version finishes the Setup tab foundation:
-- Attendee directory
-- Emergency quick view
-- Team formation
-- Registration cost
-- Mobile cards
-- Search
-- Tap-to-call / tap-to-email links
-
-Upload these files to GitHub and replace the existing files.
+Changes:
+- Clean app-style visual direction
+- Removed Setup search bar
+- Removed summary cards
+- Attendee Directory uses original spreadsheet-style columns except emergency columns removed
+- Removed Registration Cost
+- Team Formation follows relay order format from source image
+- Emergency Quick View moved to bottom

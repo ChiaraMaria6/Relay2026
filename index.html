@@ -1,788 +1,161 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Egret Relay 2026</title>
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Egret Relay 2026</title>
+<link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <aside class="sidebar">
-    <div class="brand">
-      <div class="logo">𓅯</div>
-      <div>
-        <h1>Egret Relay</h1>
-        <p>2026 Private Event Hub</p>
-      </div>
+<header class="app-header">
+  <div class="brand-row">
+    <div class="mark">𓅯</div>
+    <div>
+      <h1>EGRET RELAY</h1>
+      <p>2026</p>
     </div>
-    <nav class="nav">
-      <button class="nav-btn active" data-tab="home">Home</button>
-      <button class="nav-btn" data-tab="setup">Setup</button>
-      <button class="nav-btn" data-tab="schedule">Schedule</button>
-      <button class="nav-btn" data-tab="campsite">Campsite</button>
-      <button class="nav-btn" data-tab="shirts">Shirts</button>
-      <button class="nav-btn" data-tab="poster">Poster</button>
-      <button class="nav-btn" data-tab="checklist">Checklist</button>
-    </nav>
-    <label class="admin-toggle">
-      <input type="checkbox" id="adminMode" />
-      <span>Admin editing</span>
-    </label>
-  </aside>
+  </div>
+</header>
 
-  <main class="main">
-    <header class="top">
-      <p class="eyebrow">relay.chiaramaria.com</p>
-      <h2 id="pageTitle">Home</h2>
-    </header>
+<nav class="tabbar">
+  <button class="tab active" data-tab="home">⌂<span>Home</span></button>
+  <button class="tab" data-tab="setup">👥<span>Setup</span></button>
+  <button class="tab" data-tab="schedule">▣<span>Schedule</span></button>
+  <button class="tab" data-tab="campsite">△<span>Campsite</span></button>
+  <button class="tab" data-tab="shirts">♕<span>Shirts</span></button>
+  <button class="tab" data-tab="poster">▧<span>Poster</span></button>
+  <button class="tab" data-tab="checklist">☑<span>Checklist</span></button>
+</nav>
 
-    <section id="home" class="tab-panel active">
-      <div class="hero">
-        <p class="eyebrow">Private race + camping dashboard</p>
-        <h2>Egret Relay 2026</h2>
-        <p>Mobile-friendly hub for runners, emergency contacts, schedule, campsite, shirts, poster ideas, and checklist.</p>
-      </div>
-      <div class="cards three">
-        <article class="card"><h3>Runners</h3><p class="big">16</p><p>Two active teams</p></article>
-        <article class="card"><h3>Draft Team</h3><p class="big">8</p><p>More runners needed</p></article>
-        <article class="card"><h3>Setup Status</h3><p class="big">Live</p><p>Directory + teams + costs</p></article>
-      </div>
-    </section>
+<main>
+<section id="home" class="panel active">
+  <div class="hero-card">
+    <p class="kicker">Private race + camping hub</p>
+    <h2>Egret Relay 2026</h2>
+    <p>Clean mobile-first event app for team setup, schedule, campsite, shirts, poster ideas, and checklist.</p>
+  </div>
+</section>
 
-    <section id="setup" class="tab-panel">
-      <div class="section-head">
-        <h3>Setup</h3>
-        <p>Attendees, emergency contacts, team formation, and registration costs.</p>
-      </div>
+<section id="setup" class="panel">
+  <section class="app-card">
+    <div class="section-title"><span>👥</span><h2>Attendee Directory</h2></div>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th><th>Name</th><th>Payment</th><th>$</th><th>Initial</th><th>Ave</th><th>Email</th><th>Phone</th><th>Team</th>
+          </tr>
+        </thead>
+        <tbody><tr><td>1</td><td>Chiara Manton</td><td>PAID 12/12/25</td><td>$175.90</td><td>CM</td><td>0:11:00</td><td>chiaramaria@yahoo.com</td><td>305-619-4437</td><td>No Egrets</td></tr>
+<tr><td>2</td><td>Daniel Maher</td><td>PAID 12/12/25</td><td>$175.90</td><td>DM</td><td>0:11:00</td><td>svDRIFT@gmail.com</td><td>305-510-4682</td><td>Still Full of Egrets</td></tr>
+<tr><td>3</td><td>Gretchen Chiques</td><td></td><td>$175.90</td><td>GC</td><td>0:12:00</td><td>gchiques@hotmail.com</td><td>240-418-6767</td><td>No Egrets</td></tr>
+<tr><td>4</td><td>Pilar Salazar</td><td></td><td>$175.90</td><td>PS</td><td>0:11:00</td><td>pilly1017@gmail.com</td><td>786-351-9725</td><td>Still Full of Egrets</td></tr>
+<tr><td>5</td><td>Luisa Salazar</td><td></td><td>$175.90</td><td>LS</td><td>0:11:00</td><td></td><td>786-853-9101</td><td>No Egrets</td></tr>
+<tr><td>6</td><td>Lynette Estrada</td><td></td><td>$175.90</td><td>LE</td><td>0:11:00</td><td>lestrada1221@gmail.com</td><td>305-978-1473</td><td>Still Full of Egrets</td></tr>
+<tr><td>7</td><td>Dulce Gierson</td><td></td><td>$175.90</td><td>DG</td><td>0:13:00</td><td>dgierson@gmail.com</td><td>305-788-9707</td><td>Still Full of Egrets</td></tr>
+<tr><td>8</td><td>Claudia Guitz</td><td></td><td>$175.90</td><td>CG</td><td>0:11:00</td><td>cguitz@gmail.com</td><td>786-531-5484</td><td>Still Full of Egrets</td></tr>
+<tr><td>9</td><td>Johnny Rodriguez</td><td></td><td>$175.90</td><td>JR</td><td>0:09:00</td><td>split70cam@yahoo.com</td><td>786-525-3456</td><td>Still Full of Egrets</td></tr>
+<tr><td>10</td><td>Monica Cardella</td><td></td><td>$175.90</td><td>MC</td><td>0:11:00</td><td>monicaelaine@gmail.com</td><td>206-617-3554</td><td>Still Full of Egrets</td></tr>
+<tr><td>11</td><td>David Rabella</td><td></td><td>$175.90</td><td>DR</td><td>0:09:00</td><td>drabella@gmail.com</td><td>786-514-9267</td><td>Still Full of Egrets</td></tr>
+<tr><td>12</td><td>Gaby Pelaez</td><td></td><td>$175.90</td><td>GP</td><td>0:11:00</td><td>mgpelaez@gmail.com</td><td>954-909-9772</td><td>No Egrets</td></tr>
+<tr><td>13</td><td>Lisset Velasquez</td><td></td><td>$175.90</td><td>LV</td><td>0:12:00</td><td>lisset_velazquez@yahoo.com</td><td>786-301-3082</td><td>No Egrets</td></tr>
+<tr><td>14</td><td>Edson Briggs</td><td></td><td>$175.90</td><td>EB</td><td>0:11:00</td><td>ebriggs@gmail.com</td><td>305-298-9688</td><td>No Egrets</td></tr>
+<tr><td>15</td><td>Emily Umulis</td><td></td><td>$175.90</td><td>EU</td><td>0:11:00</td><td></td><td></td><td>No Egrets</td></tr>
+<tr><td>16</td><td>John McDaniel</td><td></td><td>$175.90</td><td>JM</td><td>0:09:00</td><td></td><td>863-214-1704</td><td>No Egrets</td></tr>
+<tr><td>18</td><td>Rene Hernandez</td><td></td><td></td><td></td><td></td><td>reneccr@outlook.com</td><td></td><td>Support</td></tr></tbody>
+      </table>
+    </div>
+  </section>
 
-      <div class="admin-note">
-        <strong>Admin plan:</strong> Friends can view this data for safety. Chiara will be the only person who edits it once the app has full authentication.
-      </div>
+  <section class="app-card">
+    <div class="section-title"><span>🏃</span><h2>Team Formation</h2></div>
+    <div class="teams-grid">
+      <article class="team-box teal">
+        <h3>Team Name: No Egrets</h3>
+        <div class="table-scroll compact">
+          <table>
+            <thead><tr><th>#</th><th>Team #1</th><th>Ave</th></tr></thead>
+            <tbody><tr><td class='leg'>1</td><td>Chiara Manton</td><td>0:11:00</td></tr>
+<tr><td class='leg'>2</td><td>Emily Umulis</td><td>0:11:00</td></tr>
+<tr><td class='leg'>3</td><td>Luisa Salazar</td><td>0:11:00</td></tr>
+<tr><td class='leg'>4</td><td>Lisset Velasquez</td><td>0:12:00</td></tr>
+<tr><td class='leg'>5</td><td>Gaby Pelaez</td><td>0:11:00</td></tr>
+<tr><td class='leg'>6</td><td>John McDaniel</td><td>0:09:00</td></tr>
+<tr><td class='leg'>7</td><td>Edson Briggs</td><td>0:11:00</td></tr>
+<tr><td class='leg'>8</td><td>Gretchen Chiques</td><td>0:12:00</td></tr></tbody>
+            <tfoot><tr><td></td><td></td><td>0:11:00</td></tr></tfoot>
+          </table>
+        </div>
+        <div class="volunteer">Volunteer</div>
+      </article>
 
-      <div class="setup-nav">
-        <a href="#attendeesBlock">Attendees</a>
-        <a href="#emergencyBlock">Emergency</a>
-        <a href="#teamsBlock">Teams</a>
-        <a href="#registrationBlock">Registration</a>
-      </div>
+      <article class="team-box pink">
+        <h3>Team Name: Still Full of Egrets</h3>
+        <div class="table-scroll compact">
+          <table>
+            <thead><tr><th>#</th><th>Team #2</th><th>Ave</th></tr></thead>
+            <tbody><tr><td class='leg'>1</td><td>Daniel Maher</td><td>0:11:00</td></tr>
+<tr><td class='leg'>2</td><td>Monica Cardella</td><td>0:11:00</td></tr>
+<tr><td class='leg'>3</td><td>Pilar Salazar</td><td>0:11:00</td></tr>
+<tr><td class='leg'>4</td><td>Dulce Gierson</td><td>0:13:00</td></tr>
+<tr><td class='leg'>5</td><td>Claudia Guitz</td><td>0:11:00</td></tr>
+<tr><td class='leg'>6</td><td>Johnny Rodriguez</td><td>0:09:00</td></tr>
+<tr><td class='leg'>7</td><td>Lynette Estrada</td><td>0:11:00</td></tr>
+<tr><td class='leg'>8</td><td>David Rabella</td><td>0:09:00</td></tr></tbody>
+            <tfoot><tr><td></td><td></td><td>0:10:45</td></tr></tfoot>
+          </table>
+        </div>
+        <div class="volunteer">Volunteer</div>
+      </article>
 
-      <input id="setupSearch" class="search" type="search" placeholder="Search name, team, email, phone, emergency contact..." />
+      <article class="team-box draft">
+        <h3>Team Name: I Egret This Already</h3>
+        <div class="draft-card">
+          <strong>DRAFT</strong>
+          <p>Needs 8 more runners to activate this team.</p>
+        </div>
+      </article>
+    </div>
+  </section>
 
-      <div class="cards four setup-summary">
-        <article class="card"><h3>Attendees</h3><p class="big">17</p></article>
-        <article class="card"><h3>Active Runners</h3><p class="big">16</p></article>
-        <article class="card"><h3>Teams</h3><p class="big">2 + 1</p><p>2 active, 1 draft</p></article>
-        <article class="card"><h3>Per Runner</h3><p class="big">$175.90</p></article>
-      </div>
+  <section class="app-card emergency">
+    <div class="section-title"><span>⚠️</span><h2>Emergency Quick View</h2></div>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Runner</th><th>Emergency Contact</th><th>Relation</th><th>Phone</th></tr></thead>
+        <tbody><tr><td>Chiara Manton</td><td>Cesca Manton</td><td>Sister</td><td>267-414-3515</td></tr>
+<tr><td>Daniel Maher</td><td>Denny Maher</td><td>Father</td><td>617-631-0342</td></tr>
+<tr><td>Gretchen Chiques</td><td>Ruben A Raimundi</td><td>Son</td><td>808-348-4436</td></tr>
+<tr><td>Pilar Salazar</td><td>Yaly Salazar</td><td></td><td>305-484-2971</td></tr>
+<tr><td>Luisa Salazar</td><td>Yaly Salazar</td><td></td><td>305-484-2971</td></tr>
+<tr><td>Lynette Estrada</td><td>Rene</td><td>Partner</td><td>305-965-0750</td></tr>
+<tr><td>Dulce Gierson</td><td></td><td>Partner</td><td>305-965-0750</td></tr>
+<tr><td>Johnny Rodriguez</td><td>Karla Nicholl</td><td>Friend</td><td>305-450-3945</td></tr>
+<tr><td>Monica Cardella</td><td>Philip Cardella</td><td></td><td>206-617-0027</td></tr>
+<tr><td>David Rabella</td><td>Marta Marin</td><td>Spouse</td><td>305-389-6175</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+</section>
 
-      <div id="attendeesBlock" class="section-head sub">
-        <h3>Attendee Directory</h3>
-        <p>Desktop table plus mobile-friendly cards. Phone and email links are tappable.</p>
-      </div>
+<section id="schedule" class="panel">
+  <section class="app-card"><div class="section-title"><span>▣</span><h2>Schedule</h2></div><img src="assets/schedule.jpeg" class="ref-img"/></section>
+</section>
+<section id="campsite" class="panel">
+  <section class="app-card"><div class="section-title"><span>△</span><h2>Campsite</h2></div><img src="assets/campsite.jpeg" class="ref-img"/></section>
+</section>
+<section id="shirts" class="panel">
+  <section class="app-card"><div class="section-title"><span>♕</span><h2>Shirts</h2></div><img src="assets/shirts.jpeg" class="ref-img"/></section>
+</section>
+<section id="poster" class="panel">
+  <section class="app-card"><div class="section-title"><span>▧</span><h2>Poster</h2></div><img src="assets/poster.jpeg" class="ref-img"/></section>
+</section>
+<section id="checklist" class="panel">
+  <section class="app-card"><div class="section-title"><span>☑</span><h2>Checklist</h2></div><img src="assets/checklist-1.jpeg" class="ref-img"/><img src="assets/checklist-2.jpeg" class="ref-img"/></section>
+</section>
+</main>
 
-      <div class="attendee-table">
-        <table>
-          <thead>
-            <tr>
-              <th>Name / Team</th>
-              <th>Payment</th>
-              <th>Pace</th>
-              <th>Email</th>
-              <th>Phone</th>
-              <th>Emergency</th>
-              <th>Emergency Phone</th>
-            </tr>
-          </thead>
-          <tbody>
-            
-      <tr>
-        <td><strong>Chiara Manton</strong><br><span>No Egrets</span></td>
-        <td>PAID 12/12/25<br>$175.90</td>
-        <td>0:11:00</td>
-        <td><a href="mailto:chiaramaria@yahoo.com">chiaramaria@yahoo.com</a></td>
-        <td><a href="tel:305-619-4437">305-619-4437</a></td>
-        <td>Cesca Manton<br><span>Sister</span></td>
-        <td><a href="tel:267-414-3515">267-414-3515</a></td>
-      </tr>
-    
-      <tr>
-        <td><strong>Daniel Maher</strong><br><span>Still Full of Egrets</span></td>
-        <td>PAID 12/12/25<br>$175.90</td>
-        <td>0:11:00</td>
-        <td><a href="mailto:svDRIFT@gmail.com">svDRIFT@gmail.com</a></td>
-        <td><a href="tel:305-510-4682">305-510-4682</a></td>
-        <td>Denny Maher<br><span>Father</span></td>
-        <td><a href="tel:617-631-0342">617-631-0342</a></td>
-      </tr>
-    
-      <tr>
-        <td><strong>Gretchen Chiques</strong><br><span>No Egrets</span></td>
-        <td>Pending<br>$175.90</td>
-        <td>0:12:00</td>
-        <td><a href="mailto:gchiques@hotmail.com">gchiques@hotmail.com</a></td>
-        <td><a href="tel:240-418-6767">240-418-6767</a></td>
-        <td>Ruben A Raimundi<br><span>Son</span></td>
-        <td><a href="tel:808-348-4436">808-348-4436</a></td>
-      </tr>
-    
-      <tr>
-        <td><strong>Pilar Salazar</strong><br><span>Still Full of Egrets</span></td>
-        <td>Pending<br>$175.90</td>
-        <td>0:11:00</td>
-        <td><a href="mailto:pilly1017@gmail.com">pilly1017@gmail.com</a></td>
-        <td><a href="tel:786-351-9725">786-351-9725</a></td>
-        <td>Yaly Salazar<br><span></span></td>
-        <td><a href="tel:305-484-2971">305-484-2971</a></td>
-      </tr>
-    
-      <tr>
-        <td><strong>Luisa Salazar</strong><br><span>No Egrets</span></td>
-        <td>Pending<br>$175.90</td>
-        <td>0:11:00</td>
-        <td>—</td>
-        <td><a href="tel:786-853-9101">786-853-9101</a></td>
-        <td>Yaly Salazar<br><span></span></td>
-        <td><a href="tel:305-484-2971">305-484-2971</a></td>
-      </tr>
-    
-      <tr>
-        <td><strong>Lynette Estrada</strong><br><span>Still Full of Egrets</span></td>
-        <td>Pending<br>$175.90</td>
-        <td>0:11:00</td>
-        <td><a href="mailto:lestrada1221@gmail.com">lestrada1221@gmail.com</a></td>
-        <td><a href="tel:305-978-1473">305-978-1473</a></td>
-        <td>Rene<br><span>Partner</span></td>
-        <td><a href="tel:305-965-0750">305-965-0750</a></td>
-      </tr>
-    
-      <tr>
-        <td><strong>Dulce Gierson</strong><br><span>Still Full of Egrets</span></td>
-        <td>Pending<br>$175.90</td>
-        <td>0:13:00</td>
-        <td><a href="mailto:dgierson@gmail.com">dgierson@gmail.com</a></td>
-        <td><a href="tel:305-788-9707">305-788-9707</a></td>
-        <td>—<br><span>Partner</span></td>
-        <td><a href="tel:305-965-0750">305-965-0750</a></td>
-      </tr>
-    
-      <tr>
-        <td><strong>Claudia Guitz</strong><br><span>Still Full of Egrets</span></td>
-        <td>Pending<br>$175.90</td>
-        <td>0:11:00</td>
-        <td><a href="mailto:cguitz@gmail.com">cguitz@gmail.com</a></td>
-        <td><a href="tel:786-531-5484">786-531-5484</a></td>
-        <td>—<br><span></span></td>
-        <td>—</td>
-      </tr>
-    
-      <tr>
-        <td><strong>Johnny Rodriguez</strong><br><span>Still Full of Egrets</span></td>
-        <td>Pending<br>$175.90</td>
-        <td>0:09:00</td>
-        <td><a href="mailto:split70cam@yahoo.com">split70cam@yahoo.com</a></td>
-        <td><a href="tel:786-525-3456">786-525-3456</a></td>
-        <td>Karla Nicholl<br><span>Friend</span></td>
-        <td><a href="tel:305-450-3945">305-450-3945</a></td>
-      </tr>
-    
-      <tr>
-        <td><strong>Monica Cardella</strong><br><span>Still Full of Egrets</span></td>
-        <td>Pending<br>$175.90</td>
-        <td>0:11:00</td>
-        <td><a href="mailto:monicaelaine@gmail.com">monicaelaine@gmail.com</a></td>
-        <td><a href="tel:206-617-3554">206-617-3554</a></td>
-        <td>Philip Cardella<br><span></span></td>
-        <td><a href="tel:206-617-0027">206-617-0027</a></td>
-      </tr>
-    
-      <tr>
-        <td><strong>David Rabella</strong><br><span>Still Full of Egrets</span></td>
-        <td>Pending<br>$175.90</td>
-        <td>0:09:00</td>
-        <td><a href="mailto:drabella@gmail.com">drabella@gmail.com</a></td>
-        <td><a href="tel:786-514-9267">786-514-9267</a></td>
-        <td>Marta Marin<br><span>Spouse</span></td>
-        <td><a href="tel:305-389-6175">305-389-6175</a></td>
-      </tr>
-    
-      <tr>
-        <td><strong>Gaby Pelaez</strong><br><span>No Egrets</span></td>
-        <td>Pending<br>$175.90</td>
-        <td>0:11:00</td>
-        <td><a href="mailto:mgpelaez@gmail.com">mgpelaez@gmail.com</a></td>
-        <td><a href="tel:954-909-9772">954-909-9772</a></td>
-        <td>—<br><span></span></td>
-        <td>—</td>
-      </tr>
-    
-      <tr>
-        <td><strong>Lisset Velasquez</strong><br><span>No Egrets</span></td>
-        <td>Pending<br>$175.90</td>
-        <td>0:12:00</td>
-        <td><a href="mailto:lisset_velazquez@yahoo.com">lisset_velazquez@yahoo.com</a></td>
-        <td><a href="tel:786-301-3082">786-301-3082</a></td>
-        <td>—<br><span></span></td>
-        <td>—</td>
-      </tr>
-    
-      <tr>
-        <td><strong>Edson Briggs</strong><br><span>No Egrets</span></td>
-        <td>Pending<br>$175.90</td>
-        <td>0:11:00</td>
-        <td><a href="mailto:ebriggs@gmail.com">ebriggs@gmail.com</a></td>
-        <td><a href="tel:305-298-9688">305-298-9688</a></td>
-        <td>—<br><span></span></td>
-        <td>—</td>
-      </tr>
-    
-      <tr>
-        <td><strong>Emily Umulis</strong><br><span>No Egrets</span></td>
-        <td>Pending<br>$175.90</td>
-        <td>0:11:00</td>
-        <td>—</td>
-        <td>—</td>
-        <td>—<br><span></span></td>
-        <td>—</td>
-      </tr>
-    
-      <tr>
-        <td><strong>John McDaniel</strong><br><span>No Egrets</span></td>
-        <td>Pending<br>$175.90</td>
-        <td>0:09:00</td>
-        <td>—</td>
-        <td><a href="tel:863-214-1704">863-214-1704</a></td>
-        <td>—<br><span></span></td>
-        <td>—</td>
-      </tr>
-    
-      <tr>
-        <td><strong>Rene Hernandez</strong><br><span>Support / Campsite</span></td>
-        <td>Pending<br></td>
-        <td>—</td>
-        <td><a href="mailto:reneccr@outlook.com">reneccr@outlook.com</a></td>
-        <td>—</td>
-        <td>—<br><span></span></td>
-        <td>—</td>
-      </tr>
-    
-          </tbody>
-        </table>
-      </div>
-
-      <div class="mobile-list">
-        
-      <article class="person-card searchable" data-search="chiara manton cm paid 12/12/25 $175.90 0:11:00 chiaramaria@yahoo.com 305-619-4437 cesca manton sister 267-414-3515 no egrets">
-        <div class="person-head">
-          <div>
-            <h4>Chiara Manton</h4>
-            <p>No Egrets · Pace 0:11:00</p>
-          </div>
-          <span class="initials">CM</span>
-        </div>
-        <div class="chips">
-          <span>PAID 12/12/25 $175.90</span>
-        </div>
-        <div class="contact-actions"><a href="tel:305-619-4437" class="mini-btn">Call</a><a href="mailto:chiaramaria@yahoo.com" class="mini-btn">Email</a></div>
-        <div class="emergency-box">
-          <strong>Emergency:</strong> Cesca Manton (Sister)
-          <div><a href="tel:267-414-3515" class="mini-btn danger">Emergency Call</a></div>
-        </div>
-      </article>
-    
-      <article class="person-card searchable" data-search="daniel maher dm paid 12/12/25 $175.90 0:11:00 svdrift@gmail.com 305-510-4682 denny maher father 617-631-0342 still full of egrets">
-        <div class="person-head">
-          <div>
-            <h4>Daniel Maher</h4>
-            <p>Still Full of Egrets · Pace 0:11:00</p>
-          </div>
-          <span class="initials">DM</span>
-        </div>
-        <div class="chips">
-          <span>PAID 12/12/25 $175.90</span>
-        </div>
-        <div class="contact-actions"><a href="tel:305-510-4682" class="mini-btn">Call</a><a href="mailto:svDRIFT@gmail.com" class="mini-btn">Email</a></div>
-        <div class="emergency-box">
-          <strong>Emergency:</strong> Denny Maher (Father)
-          <div><a href="tel:617-631-0342" class="mini-btn danger">Emergency Call</a></div>
-        </div>
-      </article>
-    
-      <article class="person-card searchable" data-search="gretchen chiques gc  $175.90 0:12:00 gchiques@hotmail.com 240-418-6767 ruben a raimundi son 808-348-4436 no egrets">
-        <div class="person-head">
-          <div>
-            <h4>Gretchen Chiques</h4>
-            <p>No Egrets · Pace 0:12:00</p>
-          </div>
-          <span class="initials">GC</span>
-        </div>
-        <div class="chips">
-          <span>Payment pending $175.90</span>
-        </div>
-        <div class="contact-actions"><a href="tel:240-418-6767" class="mini-btn">Call</a><a href="mailto:gchiques@hotmail.com" class="mini-btn">Email</a></div>
-        <div class="emergency-box">
-          <strong>Emergency:</strong> Ruben A Raimundi (Son)
-          <div><a href="tel:808-348-4436" class="mini-btn danger">Emergency Call</a></div>
-        </div>
-      </article>
-    
-      <article class="person-card searchable" data-search="pilar salazar ps  $175.90 0:11:00 pilly1017@gmail.com 786-351-9725 yaly salazar  305-484-2971 still full of egrets">
-        <div class="person-head">
-          <div>
-            <h4>Pilar Salazar</h4>
-            <p>Still Full of Egrets · Pace 0:11:00</p>
-          </div>
-          <span class="initials">PS</span>
-        </div>
-        <div class="chips">
-          <span>Payment pending $175.90</span>
-        </div>
-        <div class="contact-actions"><a href="tel:786-351-9725" class="mini-btn">Call</a><a href="mailto:pilly1017@gmail.com" class="mini-btn">Email</a></div>
-        <div class="emergency-box">
-          <strong>Emergency:</strong> Yaly Salazar 
-          <div><a href="tel:305-484-2971" class="mini-btn danger">Emergency Call</a></div>
-        </div>
-      </article>
-    
-      <article class="person-card searchable" data-search="luisa salazar ls  $175.90 0:11:00  786-853-9101 yaly salazar  305-484-2971 no egrets">
-        <div class="person-head">
-          <div>
-            <h4>Luisa Salazar</h4>
-            <p>No Egrets · Pace 0:11:00</p>
-          </div>
-          <span class="initials">LS</span>
-        </div>
-        <div class="chips">
-          <span>Payment pending $175.90</span>
-        </div>
-        <div class="contact-actions"><a href="tel:786-853-9101" class="mini-btn">Call</a></div>
-        <div class="emergency-box">
-          <strong>Emergency:</strong> Yaly Salazar 
-          <div><a href="tel:305-484-2971" class="mini-btn danger">Emergency Call</a></div>
-        </div>
-      </article>
-    
-      <article class="person-card searchable" data-search="lynette estrada le  $175.90 0:11:00 lestrada1221@gmail.com 305-978-1473 rene partner 305-965-0750 still full of egrets">
-        <div class="person-head">
-          <div>
-            <h4>Lynette Estrada</h4>
-            <p>Still Full of Egrets · Pace 0:11:00</p>
-          </div>
-          <span class="initials">LE</span>
-        </div>
-        <div class="chips">
-          <span>Payment pending $175.90</span>
-        </div>
-        <div class="contact-actions"><a href="tel:305-978-1473" class="mini-btn">Call</a><a href="mailto:lestrada1221@gmail.com" class="mini-btn">Email</a></div>
-        <div class="emergency-box">
-          <strong>Emergency:</strong> Rene (Partner)
-          <div><a href="tel:305-965-0750" class="mini-btn danger">Emergency Call</a></div>
-        </div>
-      </article>
-    
-      <article class="person-card searchable" data-search="dulce gierson dg  $175.90 0:13:00 dgierson@gmail.com 305-788-9707  partner 305-965-0750 still full of egrets">
-        <div class="person-head">
-          <div>
-            <h4>Dulce Gierson</h4>
-            <p>Still Full of Egrets · Pace 0:13:00</p>
-          </div>
-          <span class="initials">DG</span>
-        </div>
-        <div class="chips">
-          <span>Payment pending $175.90</span>
-        </div>
-        <div class="contact-actions"><a href="tel:305-788-9707" class="mini-btn">Call</a><a href="mailto:dgierson@gmail.com" class="mini-btn">Email</a></div>
-        <div class="emergency-box">
-          <strong>Emergency:</strong> Not listed (Partner)
-          <div><a href="tel:305-965-0750" class="mini-btn danger">Emergency Call</a></div>
-        </div>
-      </article>
-    
-      <article class="person-card searchable" data-search="claudia guitz cg  $175.90 0:11:00 cguitz@gmail.com 786-531-5484    still full of egrets">
-        <div class="person-head">
-          <div>
-            <h4>Claudia Guitz</h4>
-            <p>Still Full of Egrets · Pace 0:11:00</p>
-          </div>
-          <span class="initials">CG</span>
-        </div>
-        <div class="chips">
-          <span>Payment pending $175.90</span>
-        </div>
-        <div class="contact-actions"><a href="tel:786-531-5484" class="mini-btn">Call</a><a href="mailto:cguitz@gmail.com" class="mini-btn">Email</a></div>
-        <div class="emergency-box">
-          <strong>Emergency:</strong> Not listed 
-          <div></div>
-        </div>
-      </article>
-    
-      <article class="person-card searchable" data-search="johnny rodriguez jr  $175.90 0:09:00 split70cam@yahoo.com 786-525-3456 karla nicholl friend 305-450-3945 still full of egrets">
-        <div class="person-head">
-          <div>
-            <h4>Johnny Rodriguez</h4>
-            <p>Still Full of Egrets · Pace 0:09:00</p>
-          </div>
-          <span class="initials">JR</span>
-        </div>
-        <div class="chips">
-          <span>Payment pending $175.90</span>
-        </div>
-        <div class="contact-actions"><a href="tel:786-525-3456" class="mini-btn">Call</a><a href="mailto:split70cam@yahoo.com" class="mini-btn">Email</a></div>
-        <div class="emergency-box">
-          <strong>Emergency:</strong> Karla Nicholl (Friend)
-          <div><a href="tel:305-450-3945" class="mini-btn danger">Emergency Call</a></div>
-        </div>
-      </article>
-    
-      <article class="person-card searchable" data-search="monica cardella mc  $175.90 0:11:00 monicaelaine@gmail.com 206-617-3554 philip cardella  206-617-0027 still full of egrets">
-        <div class="person-head">
-          <div>
-            <h4>Monica Cardella</h4>
-            <p>Still Full of Egrets · Pace 0:11:00</p>
-          </div>
-          <span class="initials">MC</span>
-        </div>
-        <div class="chips">
-          <span>Payment pending $175.90</span>
-        </div>
-        <div class="contact-actions"><a href="tel:206-617-3554" class="mini-btn">Call</a><a href="mailto:monicaelaine@gmail.com" class="mini-btn">Email</a></div>
-        <div class="emergency-box">
-          <strong>Emergency:</strong> Philip Cardella 
-          <div><a href="tel:206-617-0027" class="mini-btn danger">Emergency Call</a></div>
-        </div>
-      </article>
-    
-      <article class="person-card searchable" data-search="david rabella dr  $175.90 0:09:00 drabella@gmail.com 786-514-9267 marta marin spouse 305-389-6175 still full of egrets">
-        <div class="person-head">
-          <div>
-            <h4>David Rabella</h4>
-            <p>Still Full of Egrets · Pace 0:09:00</p>
-          </div>
-          <span class="initials">DR</span>
-        </div>
-        <div class="chips">
-          <span>Payment pending $175.90</span>
-        </div>
-        <div class="contact-actions"><a href="tel:786-514-9267" class="mini-btn">Call</a><a href="mailto:drabella@gmail.com" class="mini-btn">Email</a></div>
-        <div class="emergency-box">
-          <strong>Emergency:</strong> Marta Marin (Spouse)
-          <div><a href="tel:305-389-6175" class="mini-btn danger">Emergency Call</a></div>
-        </div>
-      </article>
-    
-      <article class="person-card searchable" data-search="gaby pelaez gp  $175.90 0:11:00 mgpelaez@gmail.com 954-909-9772    no egrets">
-        <div class="person-head">
-          <div>
-            <h4>Gaby Pelaez</h4>
-            <p>No Egrets · Pace 0:11:00</p>
-          </div>
-          <span class="initials">GP</span>
-        </div>
-        <div class="chips">
-          <span>Payment pending $175.90</span>
-        </div>
-        <div class="contact-actions"><a href="tel:954-909-9772" class="mini-btn">Call</a><a href="mailto:mgpelaez@gmail.com" class="mini-btn">Email</a></div>
-        <div class="emergency-box">
-          <strong>Emergency:</strong> Not listed 
-          <div></div>
-        </div>
-      </article>
-    
-      <article class="person-card searchable" data-search="lisset velasquez lv  $175.90 0:12:00 lisset_velazquez@yahoo.com 786-301-3082    no egrets">
-        <div class="person-head">
-          <div>
-            <h4>Lisset Velasquez</h4>
-            <p>No Egrets · Pace 0:12:00</p>
-          </div>
-          <span class="initials">LV</span>
-        </div>
-        <div class="chips">
-          <span>Payment pending $175.90</span>
-        </div>
-        <div class="contact-actions"><a href="tel:786-301-3082" class="mini-btn">Call</a><a href="mailto:lisset_velazquez@yahoo.com" class="mini-btn">Email</a></div>
-        <div class="emergency-box">
-          <strong>Emergency:</strong> Not listed 
-          <div></div>
-        </div>
-      </article>
-    
-      <article class="person-card searchable" data-search="edson briggs eb  $175.90 0:11:00 ebriggs@gmail.com 305-298-9688    no egrets">
-        <div class="person-head">
-          <div>
-            <h4>Edson Briggs</h4>
-            <p>No Egrets · Pace 0:11:00</p>
-          </div>
-          <span class="initials">EB</span>
-        </div>
-        <div class="chips">
-          <span>Payment pending $175.90</span>
-        </div>
-        <div class="contact-actions"><a href="tel:305-298-9688" class="mini-btn">Call</a><a href="mailto:ebriggs@gmail.com" class="mini-btn">Email</a></div>
-        <div class="emergency-box">
-          <strong>Emergency:</strong> Not listed 
-          <div></div>
-        </div>
-      </article>
-    
-      <article class="person-card searchable" data-search="emily umulis eu  $175.90 0:11:00      no egrets">
-        <div class="person-head">
-          <div>
-            <h4>Emily Umulis</h4>
-            <p>No Egrets · Pace 0:11:00</p>
-          </div>
-          <span class="initials">EU</span>
-        </div>
-        <div class="chips">
-          <span>Payment pending $175.90</span>
-        </div>
-        <div class="contact-actions"></div>
-        <div class="emergency-box">
-          <strong>Emergency:</strong> Not listed 
-          <div></div>
-        </div>
-      </article>
-    
-      <article class="person-card searchable" data-search="john mcdaniel jm  $175.90 0:09:00  863-214-1704    no egrets">
-        <div class="person-head">
-          <div>
-            <h4>John McDaniel</h4>
-            <p>No Egrets · Pace 0:09:00</p>
-          </div>
-          <span class="initials">JM</span>
-        </div>
-        <div class="chips">
-          <span>Payment pending $175.90</span>
-        </div>
-        <div class="contact-actions"><a href="tel:863-214-1704" class="mini-btn">Call</a></div>
-        <div class="emergency-box">
-          <strong>Emergency:</strong> Not listed 
-          <div></div>
-        </div>
-      </article>
-    
-      <article class="person-card searchable" data-search="rene hernandez     reneccr@outlook.com     support / campsite">
-        <div class="person-head">
-          <div>
-            <h4>Rene Hernandez</h4>
-            <p>Support / Campsite · Pace —</p>
-          </div>
-          <span class="initials">—</span>
-        </div>
-        <div class="chips">
-          <span>Payment pending </span>
-        </div>
-        <div class="contact-actions"><a href="mailto:reneccr@outlook.com" class="mini-btn">Email</a></div>
-        <div class="emergency-box">
-          <strong>Emergency:</strong> Not listed 
-          <div></div>
-        </div>
-      </article>
-    
-      </div>
-
-      <div id="emergencyBlock" class="section-head sub">
-        <h3>Emergency Quick View</h3>
-        <p>Fast access if Chiara is unavailable.</p>
-      </div>
-      <div class="cards two emergency-grid">
-        
-          <article class="emergency-card searchable" data-search="chiara manton cm paid 12/12/25 $175.90 0:11:00 chiaramaria@yahoo.com 305-619-4437 cesca manton sister 267-414-3515 no egrets">
-            <h4>Chiara Manton</h4>
-            <p><strong>Cesca Manton</strong> · Sister</p>
-            <div class="contact-actions"><a href="tel:267-414-3515" class="mini-btn danger">Emergency Call</a></div>
-          </article>
-        
-          <article class="emergency-card searchable" data-search="daniel maher dm paid 12/12/25 $175.90 0:11:00 svdrift@gmail.com 305-510-4682 denny maher father 617-631-0342 still full of egrets">
-            <h4>Daniel Maher</h4>
-            <p><strong>Denny Maher</strong> · Father</p>
-            <div class="contact-actions"><a href="tel:617-631-0342" class="mini-btn danger">Emergency Call</a></div>
-          </article>
-        
-          <article class="emergency-card searchable" data-search="gretchen chiques gc  $175.90 0:12:00 gchiques@hotmail.com 240-418-6767 ruben a raimundi son 808-348-4436 no egrets">
-            <h4>Gretchen Chiques</h4>
-            <p><strong>Ruben A Raimundi</strong> · Son</p>
-            <div class="contact-actions"><a href="tel:808-348-4436" class="mini-btn danger">Emergency Call</a></div>
-          </article>
-        
-          <article class="emergency-card searchable" data-search="pilar salazar ps  $175.90 0:11:00 pilly1017@gmail.com 786-351-9725 yaly salazar  305-484-2971 still full of egrets">
-            <h4>Pilar Salazar</h4>
-            <p><strong>Yaly Salazar</strong> </p>
-            <div class="contact-actions"><a href="tel:305-484-2971" class="mini-btn danger">Emergency Call</a></div>
-          </article>
-        
-          <article class="emergency-card searchable" data-search="luisa salazar ls  $175.90 0:11:00  786-853-9101 yaly salazar  305-484-2971 no egrets">
-            <h4>Luisa Salazar</h4>
-            <p><strong>Yaly Salazar</strong> </p>
-            <div class="contact-actions"><a href="tel:305-484-2971" class="mini-btn danger">Emergency Call</a></div>
-          </article>
-        
-          <article class="emergency-card searchable" data-search="lynette estrada le  $175.90 0:11:00 lestrada1221@gmail.com 305-978-1473 rene partner 305-965-0750 still full of egrets">
-            <h4>Lynette Estrada</h4>
-            <p><strong>Rene</strong> · Partner</p>
-            <div class="contact-actions"><a href="tel:305-965-0750" class="mini-btn danger">Emergency Call</a></div>
-          </article>
-        
-          <article class="emergency-card searchable" data-search="dulce gierson dg  $175.90 0:13:00 dgierson@gmail.com 305-788-9707  partner 305-965-0750 still full of egrets">
-            <h4>Dulce Gierson</h4>
-            <p><strong>Not listed</strong> · Partner</p>
-            <div class="contact-actions"><a href="tel:305-965-0750" class="mini-btn danger">Emergency Call</a></div>
-          </article>
-        
-          <article class="emergency-card searchable" data-search="johnny rodriguez jr  $175.90 0:09:00 split70cam@yahoo.com 786-525-3456 karla nicholl friend 305-450-3945 still full of egrets">
-            <h4>Johnny Rodriguez</h4>
-            <p><strong>Karla Nicholl</strong> · Friend</p>
-            <div class="contact-actions"><a href="tel:305-450-3945" class="mini-btn danger">Emergency Call</a></div>
-          </article>
-        
-          <article class="emergency-card searchable" data-search="monica cardella mc  $175.90 0:11:00 monicaelaine@gmail.com 206-617-3554 philip cardella  206-617-0027 still full of egrets">
-            <h4>Monica Cardella</h4>
-            <p><strong>Philip Cardella</strong> </p>
-            <div class="contact-actions"><a href="tel:206-617-0027" class="mini-btn danger">Emergency Call</a></div>
-          </article>
-        
-          <article class="emergency-card searchable" data-search="david rabella dr  $175.90 0:09:00 drabella@gmail.com 786-514-9267 marta marin spouse 305-389-6175 still full of egrets">
-            <h4>David Rabella</h4>
-            <p><strong>Marta Marin</strong> · Spouse</p>
-            <div class="contact-actions"><a href="tel:305-389-6175" class="mini-btn danger">Emergency Call</a></div>
-          </article>
-        
-      </div>
-
-      <div id="teamsBlock" class="section-head sub">
-        <h3>Team Formation</h3>
-        <p>Includes the third draft team for future expansion.</p>
-      </div>
-      <div class="cards three">
-        
-      <article class="card team-card teal">
-        <div class="team-top">
-          <h4>No Egrets</h4>
-          <span class="status">Active</span>
-        </div>
-        <p>Average pace: <strong>0:11:00</strong></p>
-        <p class="muted"></p>
-        <div class="member-list"><span>Chiara Manton</span><span>Emily Umulis</span><span>Luisa Salazar</span><span>Lisset Velasquez</span><span>Gaby Pelaez</span><span>John McDaniel</span><span>Edson Briggs</span><span>Gretchen Chiques</span></div>
-      </article>
-    
-      <article class="card team-card pink">
-        <div class="team-top">
-          <h4>Still Full of Egrets</h4>
-          <span class="status">Active</span>
-        </div>
-        <p>Average pace: <strong>0:10:45</strong></p>
-        <p class="muted"></p>
-        <div class="member-list"><span>Daniel Maher</span><span>Monica Cardella</span><span>Pilar Salazar</span><span>Dulce Gierson</span><span>Claudia Guitz</span><span>Johnny Rodriguez</span><span>Lynette Estrada</span><span>David Rabella</span></div>
-      </article>
-    
-      <article class="card team-card yellow">
-        <div class="team-top">
-          <h4>I Egret This Already</h4>
-          <span class="status">Draft</span>
-        </div>
-        <p>Average pace: <strong>—</strong></p>
-        <p class="muted">Needs 8 more runners to activate.</p>
-        <div class="member-list"><em>No runners assigned yet.</em></div>
-      </article>
-    
-      </div>
-
-      <div id="registrationBlock" class="section-head sub">
-        <h3>Registration Cost</h3>
-        <p>Summary of current registration costs and draft third registration.</p>
-      </div>
-      <div class="cards three">
-        
-      <article class="card registration-card">
-        <h4>Registration Cost 1</h4>
-        <p class="ref">Reference: 693c2fc0693f84bdc5df7e5f</p>
-        <dl>
-          <div><dt>Registration</dt><dd>$1,392.00</dd></div>
-          <div><dt>Fees</dt><dd>$85.68</dd></div>
-          <div><dt>Discount</dt><dd>($250.00)</dd></div>
-          <div class="total"><dt>Total</dt><dd>$1,227.68</dd></div>
-          <div><dt>Runners</dt><dd>8</dd></div>
-          <div class="per"><dt>Per Runner</dt><dd>$153.46</dd></div>
-        </dl>
-        
-      </article>
-    
-      <article class="card registration-card">
-        <h4>Registration Cost 2</h4>
-        <p class="ref">Reference: 6a4144c9252c88bb664f76b7</p>
-        <dl>
-          <div><dt>Registration</dt><dd>$1,640.00</dd></div>
-          <div><dt>Fees</dt><dd>$110.72</dd></div>
-          <div><dt>Discount</dt><dd>($164.00)</dd></div>
-          <div class="total"><dt>Total</dt><dd>$1,586.72</dd></div>
-          <div><dt>Runners</dt><dd>8</dd></div>
-          <div class="per"><dt>Per Runner</dt><dd>$198.34</dd></div>
-        </dl>
-        
-      </article>
-    
-      <article class="card registration-card">
-        <h4>Registration Cost 3</h4>
-        <p class="ref">Reference: Draft</p>
-        <dl>
-          <div><dt>Registration</dt><dd>—</dd></div>
-          <div><dt>Fees</dt><dd>—</dd></div>
-          <div><dt>Discount</dt><dd>—</dd></div>
-          <div class="total"><dt>Total</dt><dd>—</dd></div>
-          <div><dt>Runners</dt><dd>0</dd></div>
-          <div class="per"><dt>Per Runner</dt><dd>—</dd></div>
-        </dl>
-        <p class='draft-note'>Waiting for 8 more runners.</p>
-      </article>
-    
-      </div>
-    </section>
-
-    <section id="schedule" class="tab-panel">
-      <div class="section-head"><h3>Schedule</h3><p>Key deadlines, race schedule, maps, and driving references.</p></div>
-      <div class="cards two">
-        <article class="card"><h3>Key Deadlines</h3><ul class="clean-list"><li><strong>Nov 1:</strong> Confirm T-shirt sizes</li><li><strong>Nov 1:</strong> Confirm team names</li><li><strong>Nov 6:</strong> Volunteer shifts open</li><li><strong>Dec 1:</strong> Online check-in opens</li></ul></article>
-        <article class="card"><h3>Schedule Reference</h3><img src="assets/schedule.jpeg" alt="Schedule reference" class="reference-img" /></article>
-      </div>
-    </section>
-
-    <section id="campsite" class="tab-panel">
-      <div class="section-head"><h3>Campsite</h3><p>Campsite layout, sleeping assignments, community setup, and tips.</p></div>
-      <div class="cards two">
-        <article class="card"><h3>Campsite Layout</h3><img src="assets/campsite.jpeg" alt="Campsite layout" class="reference-img" /></article>
-        <article class="card"><h3>Camp Tips</h3><ul class="clean-list"><li>Choose a quieter spot near the edge of camp.</li><li>Plan for 1–2 communal 10x10 tents.</li><li>Everyone brings their own chair.</li><li>Bring or rent a cot.</li><li>Use two coolers for water and food.</li></ul></article>
-      </div>
-    </section>
-
-    <section id="shirts" class="tab-panel">
-      <div class="section-head"><h3>Shirts</h3><p>Team shirt designs, order links, gear exchange, and team gallery.</p></div>
-      <div class="cards two">
-        <article class="card"><h3>Order Center</h3><ul class="clean-list"><li><strong>No Egrets:</strong> link coming later</li><li><strong>Still Full of Egrets:</strong> link coming later</li><li><strong>I Egret This Already:</strong> draft</li></ul></article>
-        <article class="card"><h3>Reference</h3><img src="assets/shirts.jpeg" alt="Shirts reference" class="reference-img" /></article>
-      </div>
-    </section>
-
-    <section id="poster" class="tab-panel">
-      <div class="section-head"><h3>Poster</h3><p>Ideas and supplies for the volunteer creating the race poster.</p></div>
-      <div class="cards two">
-        <article class="card"><h3>Poster Ideas</h3><img src="assets/poster.jpeg" alt="Poster ideas" class="reference-img" /></article>
-        <article class="card"><h3>Poster Checklist</h3><ul class="clean-list"><li>Large course map</li><li>Runner order</li><li>Leg assignments</li><li>Loop assignments</li><li>Sharpies</li><li>Tape / clips / zip ties</li></ul></article>
-      </div>
-    </section>
-
-    <section id="checklist" class="tab-panel">
-      <div class="section-head"><h3>Checklist</h3><p>Master checklist. Only Chiara updates the list.</p></div>
-      <div class="cards three">
-        <article class="card"><h3>Transport</h3><p>Cars, drivers, passengers, backups.</p></article>
-        <article class="card"><h3>Campground</h3><p>Tents, tables, coolers, tarps.</p></article>
-        <article class="card"><h3>Running Gear</h3><p>Headlamps, GPS watches, shoes, clothing.</p></article>
-      </div>
-      <div class="cards two">
-        <article class="card"><h3>Checklist Reference 1</h3><img src="assets/checklist-1.jpeg" alt="Checklist reference 1" class="reference-img" /></article>
-        <article class="card"><h3>Checklist Reference 2</h3><img src="assets/checklist-2.jpeg" alt="Checklist reference 2" class="reference-img" /></article>
-      </div>
-    </section>
-  </main>
-
-  <div id="lightbox" class="lightbox"><img id="lightboxImg" alt="Expanded reference image" /></div>
-  <script src="script.js"></script>
+<footer>Together We <em>Fly</em> ♡</footer>
+<script src="script.js"></script>
 </body>
 </html>
