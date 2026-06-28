@@ -1,6 +1,3 @@
-# Ragnar Relay Alafia Trail 2026 v5
+# Ragnar Relay Alafia Trail 2026 v6
 
-Revisions:
-- Volunteer Pending moved to bottom under team name column.
-- Emergency Quick View shows all 16 runners.
-- New Carpool tab added using Area, Item, Required, Status, Who, Total columns.
+Baseline app release with approved Home, Setup, Campsite, Checklist, and Carpool updates.
