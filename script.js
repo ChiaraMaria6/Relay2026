@@ -1,1 +1,45 @@
-const buttons=document.querySelectorAll('nav button');const panels=document.querySelectorAll('.panel');const title=document.getElementById('title');buttons.forEach(btn=>btn.addEventListener('click',()=>{buttons.forEach(b=>b.classList.remove('active'));panels.forEach(p=>p.classList.remove('active'));btn.classList.add('active');document.getElementById(btn.dataset.tab).classList.add('active');title.textContent=btn.textContent.trim()}));document.getElementById('admin').addEventListener('change',e=>document.body.classList.toggle('admin-on',e.target.checked));const box=document.getElementById('lightbox');const boxImg=box.querySelector('img');document.querySelectorAll('.card img').forEach(img=>img.addEventListener('click',()=>{boxImg.src=img.src;box.classList.add('show')}));box.addEventListener('click',()=>{box.classList.remove('show');boxImg.src=''})
+const navButtons = document.querySelectorAll(".nav-btn");
+const panels = document.querySelectorAll(".tab-panel");
+const pageTitle = document.getElementById("pageTitle");
+const adminMode = document.getElementById("adminMode");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightboxImg");
+const setupSearch = document.getElementById("setupSearch");
+
+navButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    const target = button.dataset.tab;
+    navButtons.forEach(btn => btn.classList.remove("active"));
+    panels.forEach(panel => panel.classList.remove("active"));
+    button.classList.add("active");
+    document.getElementById(target).classList.add("active");
+    pageTitle.textContent = button.textContent.trim();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+});
+
+adminMode.addEventListener("change", () => {
+  document.body.classList.toggle("admin-on", adminMode.checked);
+});
+
+document.querySelectorAll(".reference-img").forEach(img => {
+  img.addEventListener("click", () => {
+    lightboxImg.src = img.src;
+    lightbox.classList.add("show");
+  });
+});
+
+lightbox.addEventListener("click", () => {
+  lightbox.classList.remove("show");
+  lightboxImg.src = "";
+});
+
+if (setupSearch) {
+  setupSearch.addEventListener("input", () => {
+    const query = setupSearch.value.trim().toLowerCase();
+    document.querySelectorAll(".searchable").forEach(card => {
+      const text = card.dataset.search || "";
+      card.style.display = text.includes(query) ? "" : "none";
+    });
+  });
+}

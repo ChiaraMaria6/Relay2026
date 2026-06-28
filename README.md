@@ -1,5 +1,12 @@
-# Egret Relay 2026 v2 Foundation
+# Egret Relay 2026 v2 Setup
 
-Clean foundation version for GitHub Pages.
+This version finishes the Setup tab foundation:
+- Attendee directory
+- Emergency quick view
+- Team formation
+- Registration cost
+- Mobile cards
+- Search
+- Tap-to-call / tap-to-email links
 
-Tabs: Home, Setup, Schedule, Campsite, Shirts, Poster, Checklist.
+Upload these files to GitHub and replace the existing files.
