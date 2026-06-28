@@ -1,0 +1,632 @@
+{
+  "attendees": [
+    [
+      "Chiara Manton",
+      "CM",
+      "PAID 12/12/25",
+      "$175.90",
+      "0:11:00",
+      "chiaramaria@yahoo.com",
+      "305-619-4437",
+      "Cesca Manton",
+      "Sister",
+      "267-414-3515"
+    ],
+    [
+      "Daniel Maher",
+      "DM",
+      "PAID 12/12/25",
+      "$175.90",
+      "0:11:00",
+      "svDRIFT@gmail.com",
+      "305-510-4682",
+      "Denny Maher",
+      "Father",
+      "617-631-0342"
+    ],
+    [
+      "Gretchen Chiques",
+      "GC",
+      "",
+      "$175.90",
+      "0:12:00",
+      "gchiques@hotmail.com",
+      "240-418-6767",
+      "Ruben A Raimundi",
+      "Son",
+      "808-348-4436"
+    ],
+    [
+      "Pilar Salazar",
+      "PS",
+      "",
+      "$175.90",
+      "0:11:00",
+      "pilly1017@gmail.com",
+      "786-351-9725",
+      "Yaly Salazar",
+      "",
+      "305-484-2971"
+    ],
+    [
+      "Luisa Salazar",
+      "LS",
+      "",
+      "$175.90",
+      "0:11:00",
+      "",
+      "786-853-9101",
+      "Yaly Salazar",
+      "",
+      "305-484-2971"
+    ],
+    [
+      "Lynette Estrada",
+      "LE",
+      "",
+      "$175.90",
+      "0:11:00",
+      "lestrada1221@gmail.com",
+      "305-978-1473",
+      "Rene",
+      "Partner",
+      "305-965-0750"
+    ],
+    [
+      "Dulce Gierson",
+      "DG",
+      "",
+      "$175.90",
+      "0:13:00",
+      "dgierson@gmail.com",
+      "305-788-9707",
+      "",
+      "Partner",
+      "305-965-0750"
+    ],
+    [
+      "Claudia Guitz",
+      "CG",
+      "",
+      "$175.90",
+      "0:11:00",
+      "cguitz@gmail.com",
+      "786-531-5484",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Johnny Rodriguez",
+      "JR",
+      "",
+      "$175.90",
+      "0:09:00",
+      "split70cam@yahoo.com",
+      "786-525-3456",
+      "Karla Nicholl",
+      "Friend",
+      "305-450-3945"
+    ],
+    [
+      "Monica Cardella",
+      "MC",
+      "",
+      "$175.90",
+      "0:11:00",
+      "monicaelaine@gmail.com",
+      "206-617-3554",
+      "Philip Cardella",
+      "",
+      "206-617-0027"
+    ],
+    [
+      "David Rabella",
+      "DR",
+      "",
+      "$175.90",
+      "0:09:00",
+      "drabella@gmail.com",
+      "786-514-9267",
+      "Marta Marin",
+      "Spouse",
+      "305-389-6175"
+    ],
+    [
+      "Gaby Pelaez",
+      "GP",
+      "",
+      "$175.90",
+      "0:11:00",
+      "mgpelaez@gmail.com",
+      "954-909-9772",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Lisset Velasquez",
+      "LV",
+      "",
+      "$175.90",
+      "0:12:00",
+      "lisset_velazquez@yahoo.com",
+      "786-301-3082",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Edson Briggs",
+      "EB",
+      "",
+      "$175.90",
+      "0:11:00",
+      "ebriggs@gmail.com",
+      "305-298-9688",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Emily Umulis",
+      "EU",
+      "",
+      "$175.90",
+      "0:11:00",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "John McDaniel",
+      "JM",
+      "",
+      "$175.90",
+      "0:09:00",
+      "",
+      "863-214-1704",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Rene Hernandez",
+      "",
+      "",
+      "",
+      "",
+      "reneccr@outlook.com",
+      "",
+      "",
+      "",
+      ""
+    ]
+  ],
+  "teams": [
+    {
+      "name": "No Egrets",
+      "status": "Active",
+      "avg": "0:11:00",
+      "members": [
+        "Chiara Manton",
+        "Emily Umulis",
+        "Luisa Salazar",
+        "Lisset Velasquez",
+        "Gaby Pelaez",
+        "John McDaniel",
+        "Edson Briggs",
+        "Gretchen Chiques"
+      ]
+    },
+    {
+      "name": "Still Full of Egrets",
+      "status": "Active",
+      "avg": "0:10:45",
+      "members": [
+        "Daniel Maher",
+        "Monica Cardella",
+        "Pilar Salazar",
+        "Dulce Gierson",
+        "Claudia Guitz",
+        "Johnny Rodriguez",
+        "Lynette Estrada",
+        "David Rabella"
+      ]
+    },
+    {
+      "name": "I Egret This Already",
+      "status": "DRAFT",
+      "avg": "\u2014",
+      "members": [],
+      "note": "Need 8 more runners to sign up."
+    }
+  ],
+  "registration": [
+    {
+      "title": "Registration Cost 1",
+      "ref": "693c2fc0693f84bdc5df7e5f",
+      "total": "$1,227.68",
+      "runners": 8,
+      "runner": "$153.46"
+    },
+    {
+      "title": "Registration Cost 2",
+      "ref": "6a4144c9252c88bb664f76b7",
+      "total": "$1,586.72",
+      "runners": 8,
+      "runner": "$198.34"
+    },
+    {
+      "title": "Registration Cost 3",
+      "ref": "DRAFT",
+      "total": "$0.00",
+      "runners": 0,
+      "runner": "\u2014"
+    }
+  ],
+  "deadlines": [
+    [
+      "Nov 1, 2026",
+      "Confirm T-shirt sizes"
+    ],
+    [
+      "Nov 1, 2026",
+      "Confirm team name"
+    ],
+    [
+      "Nov 6, 2026",
+      "Volunteer shift open date"
+    ],
+    [
+      "Nov 1, 2026",
+      "Make changes to roster and pace"
+    ],
+    [
+      "Dec 1, 2026",
+      "Online check-in"
+    ]
+  ],
+  "schedule": [
+    [
+      "Thu Dec 4",
+      "8AM-11AM",
+      "Pack Cars"
+    ],
+    [
+      "Thu Dec 4",
+      "11AM-3PM",
+      "Drive (~4 hours)"
+    ],
+    [
+      "Thu Dec 4",
+      "3PM-5PM",
+      "Parking Open, Camp Setup, Rent a Cot"
+    ],
+    [
+      "Thu Dec 4",
+      "5PM-10PM",
+      "Check-in and Village Open and Dinner Sales"
+    ],
+    [
+      "Thu Dec 4",
+      "6:30PM",
+      "Runner Briefing at the Stage"
+    ],
+    [
+      "Fri Dec 5",
+      "8AM",
+      "Race Check-in Opens"
+    ],
+    [
+      "Fri Dec 5",
+      "9:30 AM",
+      "Team #1 + #2 Start Time ESTIMATE"
+    ],
+    [
+      "Fri Dec 5",
+      "10:00PM",
+      "Christmas Movies"
+    ],
+    [
+      "Sat Dec 6",
+      "8AM-1PM",
+      "Gear Drop"
+    ],
+    [
+      "Sat Dec 6",
+      "4PM",
+      "Last Runners Allowed On Course"
+    ],
+    [
+      "Sat Dec 6",
+      "6pmish",
+      "Race Finished"
+    ],
+    [
+      "Sat Dec 6",
+      "7PM",
+      "Campground Closed / Drive Home"
+    ]
+  ],
+  "campsiteTips": [
+    "Teams get 20' x 20' per team; choose a quiet edge spot when possible.",
+    "Use 1-2 communal open 10' x 10' canopies.",
+    "Need two coolers for water bottles and food.",
+    "Everyone brings their own chair.",
+    "Everyone should bring a cot or rent one at race for $20."
+  ],
+  "sleeping": [
+    [
+      "Tent Sleeps 1",
+      "Johnny Rodriguez"
+    ],
+    [
+      "Tent Sleeps 1",
+      "John McDaniel"
+    ],
+    [
+      "Tent Sleeps 2",
+      "Gretchen Chiques + Guest"
+    ],
+    [
+      "Tent Sleeps 2",
+      "Lynette Estrada + Rene Hernandez"
+    ],
+    [
+      "Tent Sleeps 2",
+      "Chiara Manton + Daniel Maher"
+    ],
+    [
+      "Ozark Tent",
+      "Available"
+    ],
+    [
+      "Embark Tent",
+      "Available"
+    ]
+  ],
+  "shirtOrders": [
+    [
+      "No Egrets",
+      "Nov 11",
+      "Link coming soon"
+    ],
+    [
+      "Still Full of Egrets",
+      "Nov 11",
+      "Link coming soon"
+    ],
+    [
+      "I Egret This Already",
+      "TBD",
+      "Draft"
+    ]
+  ],
+  "poster": [
+    "Large course map",
+    "Runner order",
+    "Leg assignments",
+    "Loop assignments",
+    "Team names",
+    "Estimated paces",
+    "Camp map",
+    "Sharpies",
+    "Dry erase markers",
+    "Tape",
+    "Binder clips",
+    "Zip ties"
+  ],
+  "checklist": [
+    [
+      "Transport",
+      "Car 1 (Chiara fits 5)",
+      "TRANSPORT",
+      "COMPLETE",
+      "Chiara+Elena+Monica+Anastasiya+Tara",
+      "5"
+    ],
+    [
+      "Transport",
+      "Car 2 (Dan fits 5)",
+      "TRANSPORT",
+      "COMPLETE",
+      "Dan+Dulce+George+Claudia+Pilar",
+      "4"
+    ],
+    [
+      "Campground",
+      "Tent Communal 10x10",
+      "YES",
+      "COMPLETE",
+      "Chiara+Lynette",
+      "2"
+    ],
+    [
+      "Campground",
+      "Tent Sleeping Dan (sleeps 2)",
+      "YES",
+      "COMPLETE",
+      "Chiara+Dan",
+      "2"
+    ],
+    [
+      "Campground",
+      "Cooler Large for Water",
+      "YES",
+      "COMPLETE",
+      "Chiara",
+      "1"
+    ],
+    [
+      "Camping Gear",
+      "Cash $10/person for park parking",
+      "YES",
+      "individual",
+      "Everyone",
+      "16"
+    ],
+    [
+      "Camping Gear",
+      "Camping chairs",
+      "YES",
+      "individual",
+      "Everyone",
+      "16"
+    ],
+    [
+      "Camping Gear",
+      "Cots for Sleeping",
+      "YES",
+      "$20 to rent",
+      "Everyone",
+      "16"
+    ],
+    [
+      "Camping Gear",
+      "First Aid Kit",
+      "NO",
+      "COMPLETE",
+      "Chiara+Dan",
+      "1"
+    ],
+    [
+      "Food & Water",
+      "Container Hot Liquids",
+      "YES",
+      "individual",
+      "Everyone",
+      "16"
+    ],
+    [
+      "Food & Water",
+      "Reusable Utensils",
+      "YES",
+      "individual",
+      "Everyone",
+      "16"
+    ],
+    [
+      "Running",
+      "Headlamp (required)",
+      "YES",
+      "individual",
+      "Everyone",
+      "16"
+    ],
+    [
+      "Running",
+      "Running GPS Watch+Charger",
+      "YES",
+      "individual",
+      "Everyone",
+      "16"
+    ],
+    [
+      "Running",
+      "Running Top (x 3)",
+      "YES",
+      "individual",
+      "Everyone",
+      "16"
+    ],
+    [
+      "Running",
+      "Running Trail Shoes",
+      "YES",
+      "individual",
+      "Everyone",
+      "16"
+    ],
+    [
+      "Clothing",
+      "Sweats | Comfy Clothes",
+      "YES",
+      "individual",
+      "Everyone",
+      "16"
+    ],
+    [
+      "Clothing",
+      "Rain Gear | Wellies",
+      "YES",
+      "individual",
+      "Everyone",
+      "16"
+    ],
+    [
+      "Toiletries",
+      "Toilet Tent",
+      "NO",
+      "CONFIRM",
+      "CONFIRM",
+      "1"
+    ],
+    [
+      "Toiletries",
+      "Toothbrush/Toothpaste",
+      "YES",
+      "individual",
+      "Everyone",
+      "16"
+    ],
+    [
+      "Toiletries",
+      "Body Wipes",
+      "YES",
+      "individual",
+      "Everyone",
+      "16"
+    ],
+    [
+      "Other",
+      "Wagon to transport stuff",
+      "YES",
+      "COMPLETE",
+      "Dan",
+      "1"
+    ],
+    [
+      "Other",
+      "Games: Cards + Apples 2 Apples",
+      "NO",
+      "COMPLETE",
+      "Dulce",
+      "1"
+    ],
+    [
+      "Other",
+      "Custom Team Shirt",
+      "NO",
+      "SEE SHIRT TAB",
+      "reuse last year or buy new one",
+      "16"
+    ],
+    [
+      "Other",
+      "POSTER of TEAM/RACING",
+      "YES",
+      "",
+      "",
+      "1"
+    ],
+    [
+      "Other",
+      "Sharpie Pens",
+      "YES",
+      "",
+      "",
+      "1"
+    ],
+    [
+      "Other",
+      "Duck Tape",
+      "YES",
+      "",
+      "",
+      "1"
+    ]
+  ]
+}
