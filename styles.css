@@ -92,3 +92,175 @@ footer {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
 }
+
+
+/* v7.3 approved fixes */
+.egret-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 14px;
+  display: block;
+}
+
+.egret-logo svg {
+  display: none !important;
+}
+
+.tabbar {
+  justify-content: flex-start;
+  gap: 2px;
+  padding: 7px 4px;
+  scroll-padding-left: 0;
+}
+
+.tab {
+  min-width: 64px;
+  padding: 6px 6px;
+  font-size: 16px;
+  flex: 0 0 auto;
+}
+
+.tab span {
+  font-size: 11px;
+}
+
+.milestone-link {
+  width: 100%;
+  border: 1px solid rgba(53,214,191,.6);
+  text-align: left;
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+}
+
+.milestone strong {
+  font-size: clamp(13px, 3.2vw, 17px);
+  white-space: nowrap;
+  line-height: 1.2;
+}
+
+.payment-card.highlight {
+  animation: paymentPulse 1.5s ease;
+}
+
+@keyframes paymentPulse {
+  0% { box-shadow: 0 0 0 0 rgba(53,214,191,.65); }
+  60% { box-shadow: 0 0 0 10px rgba(53,214,191,0); }
+  100% { box-shadow: 0 14px 34px rgba(7,20,68,.08); }
+}
+
+.link-card small {
+  color: var(--pink);
+  font-weight: 950;
+}
+
+footer {
+  font-size: clamp(10px, 2.8vw, 13px);
+  letter-spacing: .03em;
+  white-space: nowrap;
+}
+
+@media(max-width:900px){
+  .app-header {
+    padding: 14px 10px;
+  }
+
+  .egret-logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .brand-text p {
+    font-size: 15px;
+    letter-spacing: .08em;
+  }
+
+  .brand-text small {
+    font-size: 10px;
+    white-space: nowrap;
+  }
+
+  .tabbar {
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+
+  .tab {
+    min-width: 58px;
+    padding: 5px 4px;
+    font-size: 15px;
+  }
+
+  .tab span {
+    font-size: 10px;
+  }
+
+  .progress-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 8px;
+  }
+
+  .metric {
+    padding: 8px 3px;
+  }
+
+  .metric strong {
+    font-size: 12px;
+  }
+
+  .metric small {
+    font-size: 9px;
+  }
+
+  .teams-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+  }
+
+  .team-box.draft {
+    grid-column: 1 / -1 !important;
+  }
+
+  .team-box h3 {
+    font-size: 13px;
+    padding: 8px 4px;
+    line-height: 1.15;
+  }
+
+  .compact table {
+    min-width: 0 !important;
+    table-layout: fixed;
+  }
+
+  .compact th,
+  .compact td {
+    font-size: 10px;
+    padding: 5px 3px;
+  }
+
+  .compact th:nth-child(1),
+  .compact td:nth-child(1) {
+    width: 16%;
+    text-align: center;
+  }
+
+  .compact th:nth-child(2),
+  .compact td:nth-child(2) {
+    width: 56%;
+  }
+
+  .compact th:nth-child(3),
+  .compact td:nth-child(3) {
+    width: 28%;
+    text-align: center;
+  }
+
+  .link-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}

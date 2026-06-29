@@ -1,11 +1,11 @@
-# Ragnar Relay Alafia Trail 2026 v7.2 Full Source
+# Ragnar Relay Alafia Trail 2026 v7.3
 
-Includes:
-- Approved egret image used in header.
-- Header consistent across tabs.
-- Home cards kept horizontal.
-- Milestone text reduced to one line.
-- Links section cards kept horizontal; cards show only “Link.”
-- Team Formation: first two teams kept side-by-side, headers cleaned up, columns are # / Name / Ave, paces simplified.
-- Campsite: Tent List title, Campground column removed.
+Approved changes included:
+- Replaced header bird image with latest cropped egret image supplied by user.
+- Made top navigation tabs smaller.
+- App opens on Home tab at top of page.
+- Home Next Milestone card links to Setup > Registration Payment and highlights the payment card.
+- Links cards remain horizontal and display only “Link” beneath the title.
+- Team Formation: removed “Team Name:”, changed columns to # / Name / Ave, simplified pace values.
+- Campsite: Tent List title and Campground column removed.
 - Carpool: Area/Transport column removed.
