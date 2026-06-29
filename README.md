@@ -1,11 +1,9 @@
-# Ragnar Relay Alafia Trail 2026 v7
+# Ragnar Relay Alafia Trail 2026 v7.1
 
-Approved v7 changes:
-- Home cards simplified.
-- Footer updated to No Egrets | Still Full of Egrets.
-- Registration payment cards in one horizontal row.
-- Team Formation updated with two active teams and draft third team.
-- Campsite cooler wording updated.
-- Checklist compacted with shorter headers.
-- Shirts tab uses only the four user-provided images.
-- Poster tab includes approved explanatory text.
+Changes:
+- Revised egret silhouette closer to long-necked egret reference.
+- Header includes team names and is used consistently across tabs.
+- Home progress cards fit horizontally.
+- Footer text reduced to fit horizontally.
+- Team Formation keeps No Egrets and Still Full of Egrets side-by-side on mobile.
+- Home Links section added with Trail Maps and Runner's Guide cards.
