@@ -264,3 +264,17 @@ footer {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
 }
+
+
+/* v7.4: read-only payment badges */
+.payment {
+  display: inline-block;
+  cursor: default !important;
+  user-select: none;
+}
+
+.payment:hover,
+.payment:focus {
+  filter: none;
+  outline: none;
+}
