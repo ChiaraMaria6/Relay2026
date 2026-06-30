@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Ragnar Relay Alafia Trail 2026</title>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<header class="app-header">
+  <div class="brand-row">
+    <div class="egret-logo" aria-label="Egret silhouette">
+      <img src="assets/egret-logo.jpeg" alt="Egret silhouette">
+    </div>
+    <div class="brand-text">
+      <h1>RAGNAR RELAY</h1>
+      <p>ALAFIA TRAIL 2026</p>
+      <small>No Egrets | Still Full of Egrets</small>
+    </div>
+  </div>
+</header>
+
+<nav class="tabbar">
+  <button class="tab active" data-tab="home">⌂<span>Home</span></button>
+  <button class="tab" data-tab="setup">👥<span>Setup</span></button>
+  <button class="tab" data-tab="teams">🏃<span>Teams</span></button>
+  <button class="tab" data-tab="schedule">▣<span>Schedule</span></button>
+  <button class="tab" data-tab="campsite">△<span>Campsite</span></button>
+  <button class="tab" data-tab="checklist">☑<span>Checklist</span></button>
+  <button class="tab" data-tab="shirts">♕<span>Shirts</span></button>
+  <button class="tab" data-tab="poster">▧<span>Poster</span></button>
+  <button class="tab" data-tab="carpool">🚗<span>Carpool</span></button>
+</nav>
+
+<main>
+<section id="home" class="panel active">
+  <section class="hero-card dashboard">
+    <h2>Ragnar Relay Alafia Trail 2026</h2>
+    <div class="event-meta">
+      <div>📅 <strong>Dec 4–6, 2026</strong></div>
+      <div>📍 <strong>Alafia River State Park</strong><br><span>13300 County Road 39, Lithia, FL 33547</span></div>
+    </div>
+
+    <div class="progress-grid home-three">
+      <div class="metric"><span>🧍</span><strong id="metric-runners">16 / 16</strong><small>Runners</small></div>
+      <div class="metric"><span>💳</span><strong id="metric-paid">Loading</strong><small id="metric-pending">Payments</small></div>
+      <div class="metric"><span>☑️</span><strong id="metric-checklist">Checklist</strong><small>Progress</small></div>
+    </div>
+
+    <button class="milestone milestone-link" type="button" data-target-tab="setup" data-scroll-target="registration-payment">
+      <span>🎯 Next Milestone</span>
+      <strong>Complete Registration Payment to Chiara</strong>
+    </button>
+
+    <section class="links-section">
+      <h3>Links</h3>
+      <div class="link-cards" id="links-cards">
+        <a class="link-card" href="https://cdn.shopify.com/s/files/1/0695/7098/6228/files/Banner_Map_FL_T_24.pdf?v=1736277270" target="_blank" rel="noopener"><span>🗺️</span><strong>Trail Maps</strong><small>Link</small></a>
+        <a class="link-card" href="https://docs.google.com/document/d/e/2PACX-1vT_KXhJMww61mlYI1HG2GbiWHAiS5U2O2BT7V8RNCCCu8-ihn45u-2IcCsAQP-2JpwXA-RyqcmEdPSF/pub" target="_blank" rel="noopener"><span>📖</span><strong>Runner's Guide</strong><small>Link</small></a>
+      </div>
+    </section>
+
+    <p class="data-status" id="data-status">Loading latest data…</p>
+  </section>
+</section>
+
+<section id="setup" class="panel">
+  <section id="registration-payment" class="app-card payment-card">
+    <div class="section-title"><span>💳</span><h2>Registration Payment</h2></div>
+    <p>Send your registration payment to <strong>Chiara</strong> via:</p>
+    <div class="pay-options">
+      <button class="copy-btn" data-copy="305-619-4437"><strong>Apple Cash</strong><span>305-619-4437</span></button>
+      <button class="copy-btn" data-copy="ChiaraMaria@yahoo.com"><strong>Zelle</strong><span>ChiaraMaria@yahoo.com</span></button>
+      <button class="copy-btn" data-copy="$ChiaraManton"><strong>Venmo</strong><span>$ChiaraManton</span></button>
+    </div>
+  </section>
+
+  <section class="app-card">
+    <div class="section-title"><span>👥</span><h2>Runner Directory</h2></div>
+    <div class="table-scroll attendee-table">
+      <table>
+        <thead><tr><th>#</th><th>Name</th><th>Payment</th><th>$</th><th>Initials</th><th>Average</th><th>Email</th><th>Phone</th></tr></thead>
+        <tbody id="runners-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="app-card">
+    <div class="section-title"><span>🚐</span><h2>Sherpa Directory</h2></div>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>Name</th><th>Email</th><th>Phone</th><th>Role</th></tr></thead>
+        <tbody id="sherpas-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="app-card emergency">
+    <div class="section-title"><span>⚠️</span><h2>Emergency Quick View</h2></div>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>#</th><th>Runner</th><th>Emergency Contact</th><th>Relation</th><th>Phone</th></tr></thead>
+        <tbody id="emergency-body"></tbody>
+      </table>
+    </div>
+  </section>
+</section>
+
+<section id="teams" class="panel">
+  <section class="app-card">
+    <div class="section-title"><span>🏃</span><h2>Team Formation</h2></div>
+    <div class="teams-grid" id="teams-grid">
+      <article class="team-box teal"><h3>No Egrets</h3><div class="table-scroll compact"><table><thead><tr><th>#</th><th>Name</th><th>Ave</th></tr></thead><tbody id="team-no-egrets"></tbody><tfoot><tr><td></td><td>Team Average</td><td id="avg-no-egrets">—</td></tr></tfoot></table></div></article>
+      <article class="team-box pink"><h3>Still Full of Egrets</h3><div class="table-scroll compact"><table><thead><tr><th>#</th><th>Name</th><th>Ave</th></tr></thead><tbody id="team-still-full"></tbody><tfoot><tr><td></td><td>Team Average</td><td id="avg-still-full">—</td></tr></tfoot></table></div></article>
+      <article class="team-box draft"><h3>I Egret this Already</h3><div class="draft-card"><strong>DRAFT</strong><p>Needs 8 more runners to activate this team.</p></div></article>
+    </div>
+  </section>
+</section>
+
+<section id="schedule" class="panel">
+  <section class="app-card"><div class="section-title"><span>▣</span><h2>Schedule</h2></div><img src="assets/schedule.jpeg" class="ref-img"/></section>
+</section>
+
+<section id="campsite" class="panel">
+  <section class="app-card campsite-card"><div class="section-title"><span>△</span><h2>Campsite Layout</h2></div><img src="assets/campsite-layout.jpeg" class="campsite-img"/></section>
+  <section class="app-card">
+    <div class="section-title"><span>⛺</span><h2>Tent List</h2></div>
+    <div class="table-scroll campsite-table">
+      <table><thead><tr><th>Item</th><th>Required</th><th>Status</th><th>Who</th><th>Total</th></tr></thead><tbody id="tent-body"></tbody></table>
+    </div>
+  </section>
+  <section class="app-card">
+    <div class="section-title"><span>💡</span><h2>Campsite Tips</h2></div>
+    <div class="tips-grid">
+      <article class="tip"><h3>Campsite Selection and Setup</h3><p>Once at the event, teams choose their own campsite. Each team gets a 20’ x 20’ area. Choose a quieter location near the edge of camp when possible.</p></article>
+      <article class="tip"><h3>Communal Tents</h3><p>Plan for 1–2 communal 10’ x 10’ tents for snacks, games, and shared space.</p></article>
+      <article class="tip"><h3>Coolers</h3><p>Race provides water. We will bring one large Gatorade cooler with water so we minimize plastic bottles.</p></article>
+      <article class="tip"><h3>Chairs</h3><p>Everyone should bring their own camping chair.</p></article>
+      <article class="tip"><h3>Cots</h3><p>Everyone should bring a cot or rent one at the race for $20.</p></article>
+    </div>
+  </section>
+</section>
+
+<section id="checklist" class="panel">
+  <section class="app-card">
+    <div class="section-title"><span>☑</span><h2>Checklist</h2></div>
+    <div id="checklist-sections"></div>
+  </section>
+</section>
+
+<section id="shirts" class="panel">
+  <section class="app-card">
+    <div class="section-title"><span>♕</span><h2>Shirts</h2></div>
+    <p class="intro-text">We can order team shirts in November. You can also ask members from the 2024/2025 Ragnar that no longer want to use their shirt.</p>
+    <div class="shirt-gallery">
+      <img src="assets/shirt-no-egrets.jpeg" alt="No Egrets shirt">
+      <img src="assets/shirt-still-full.jpeg" alt="Still Full of Egrets shirt">
+      <img src="assets/shirt-team-2024.jpeg" alt="2024 Ragnar team photo">
+      <img src="assets/shirt-campsite.jpeg" alt="Ragnar campsite team photo">
+    </div>
+  </section>
+</section>
+
+<section id="poster" class="panel">
+  <section class="app-card">
+    <div class="section-title"><span>▧</span><h2>Poster</h2></div>
+    <p class="intro-text">If volunteer(s) are interested in creating a large poster of the runners and their assigned legs, it will help everyone remember their running order. It will also be nice to leave space for teammates to write fun quotes and memories from the race.</p>
+    <img src="assets/poster.jpeg" class="ref-img"/>
+  </section>
+</section>
+
+<section id="carpool" class="panel">
+  <section class="app-card">
+    <div class="section-title"><span>🚗</span><h2>Carpool</h2></div>
+    <div class="table-scroll">
+      <table><thead><tr><th>Item</th><th>Status</th><th>Who</th><th>Total</th></tr></thead><tbody id="carpool-body"></tbody></table>
+    </div>
+  </section>
+</section>
+</main>
+
+<div id="toast">Copied ✓</div>
+<footer>No Egrets <em>|</em> Still Full of Egrets</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
