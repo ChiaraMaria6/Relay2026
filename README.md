@@ -1,5 +1,5 @@
-# Ragnar Relay Alafia Trail 2026 v7.4.2 Hotfix
+# Relay2026 Official v8
 
-Hotfix:
-- Corrected Apple Cash phone number to 305-619-4437.
-- No other app content or layout changes.
+This version reads data from Relay2026_Data.xlsx.
+
+After uploading all root files once, future updates only require replacing Relay2026_Data.xlsx.
