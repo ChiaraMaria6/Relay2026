@@ -1,3 +1,3 @@
 Upload the CONTENTS of this folder to the ROOT of GitHub repo Relay2026.
 Do not upload the folder itself.
-Required root files: index.html, script.js, styles.css, Relay2026_Data.xlsx, assets/.
+This version includes the About tab updates plus the latest Relay2026_Data.xlsx provided by Chiara.
