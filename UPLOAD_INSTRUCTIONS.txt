@@ -1,18 +1,10 @@
-IMPORTANT — Upload these files to the ROOT of the Relay2026 GitHub repository.
+Upload the CONTENTS of this folder to the ROOT of the Relay2026 GitHub repository.
 
-Do NOT upload the folder itself.
-Do NOT upload this ZIP itself.
-
-The root should contain:
+Replace:
 - index.html
 - styles.css
 - script.js
 - Relay2026_Data.xlsx
 - assets/
 
-After this official v8 upload, future data edits only require replacing:
-- Relay2026_Data.xlsx
-
-To confirm v8 is active:
-Open the Home page and look for:
-Data loaded from Relay2026_Data.xlsx
+Do not upload the outer folder itself.

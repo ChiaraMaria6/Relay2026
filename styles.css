@@ -16,3 +16,62 @@
 .join-info-card.compact-lines h3 {
   margin-bottom: 6px;
 }
+
+/* v8.1 production */
+.schedule-card { display: grid; gap: 12px; }
+.schedule-deadlines,
+.schedule-day,
+.schedule-map {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 13px;
+}
+.schedule-deadlines h3,
+.schedule-day h3,
+.schedule-map h3 {
+  margin: 0 0 9px;
+  color: var(--navy);
+  font-size: 17px;
+}
+.deadline-row,
+.schedule-row {
+  display: grid;
+  grid-template-columns: 92px minmax(0,1fr);
+  gap: 8px;
+  align-items: start;
+  padding: 5px 0;
+  border-top: 1px solid #f0f1f5;
+  font-size: 13px;
+  line-height: 1.25;
+}
+.deadline-row:first-of-type,
+.schedule-row:first-of-type { border-top: 0; }
+.deadline-row > span:first-child,
+.schedule-row time {
+  color: var(--muted);
+  font-weight: 850;
+  white-space: nowrap;
+}
+.schedule-row.featured {
+  background: #fff0f6;
+  color: var(--pink);
+  font-weight: 950;
+  margin: 2px -5px;
+  padding: 7px 5px;
+  border-radius: 9px;
+}
+.schedule-row.featured time { color: var(--pink); }
+.schedule-map img {
+  display: block;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+}
+footer small {
+  display: inline-block;
+  margin-left: 8px;
+  color: var(--teal);
+  font-size: 9px;
+  letter-spacing: .04em;
+}
