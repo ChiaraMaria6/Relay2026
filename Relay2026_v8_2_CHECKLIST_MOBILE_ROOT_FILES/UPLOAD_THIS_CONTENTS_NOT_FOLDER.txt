@@ -1,0 +1,3 @@
+Upload the CONTENTS of this folder to the ROOT of GitHub repo Relay2026.
+Do not upload the folder itself.
+This version includes the About tab updates plus the latest Relay2026_Data.xlsx provided by Chiara.
