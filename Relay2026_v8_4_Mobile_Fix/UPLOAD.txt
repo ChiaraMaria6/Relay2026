@@ -1,0 +1,1 @@
+Upload these three files to repository ROOT, replacing existing. Do not upload Excel. index.html uses cache-busting ?v=8.4 to ensure iPhone loads the new CSS.
