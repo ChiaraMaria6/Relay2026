@@ -1,0 +1,1 @@
+Upload only styles.css into the ROOT of ChiaraMaria6/Relay2026, replacing the existing styles.css. Do not upload the ZIP or an enclosing folder. No Excel data is changed.
