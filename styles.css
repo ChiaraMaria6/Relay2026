@@ -75,3 +75,80 @@ footer small {
   font-size: 9px;
   letter-spacing: .04em;
 }
+
+/* v8.2: Checklist mobile first-view columns Item, Req, Status, Owner */
+@media (max-width: 650px) {
+  #checklist .app-card { padding: 10px 7px; }
+  #checklist .check-section summary { padding: 10px 8px; }
+  #checklist .compact-list { width: 100%; overflow-x: hidden; }
+  #checklist .compact-list table { min-width: 0; width: 100%; table-layout: fixed; }
+  #checklist .compact-list th, #checklist .compact-list td {
+    padding: 7px 3px; font-size: 10px; white-space: normal;
+    overflow-wrap: anywhere; vertical-align: middle; line-height: 1.25;
+  }
+  #checklist .compact-list th:nth-child(1), #checklist .compact-list td:nth-child(1) { width: 39%; text-align: left; }
+  #checklist .compact-list th:nth-child(2), #checklist .compact-list td:nth-child(2) { width: 9%; text-align: center; }
+  #checklist .compact-list th:nth-child(3), #checklist .compact-list td:nth-child(3) { width: 25%; text-align: center; }
+  #checklist .compact-list th:nth-child(4), #checklist .compact-list td:nth-child(4) { width: 27%; text-align: left; }
+  #checklist .compact-list th:nth-child(5), #checklist .compact-list td:nth-child(5) { display: none; }
+  #checklist .compact-list .status-badge {
+    max-width: 100%; padding: 4px 3px; font-size: 9px;
+    line-height: 1.2; white-space: normal; overflow-wrap: anywhere;
+  }
+}
+
+/* v8.2: Carpool mobile four-column layout */
+@media (max-width: 650px) {
+  #carpool .app-card { padding: 10px 7px; }
+  #carpool .table-scroll { width: 100%; overflow-x: hidden; }
+  #carpool table { min-width: 0; width: 100%; table-layout: fixed; }
+  #carpool th, #carpool td {
+    padding: 8px 4px; font-size: 10px; white-space: normal;
+    overflow-wrap: anywhere; vertical-align: middle; line-height: 1.25;
+  }
+  #carpool th:nth-child(1), #carpool td:nth-child(1) { width: 35%; text-align: left; }
+  #carpool th:nth-child(2), #carpool td:nth-child(2) { width: 24%; text-align: center; }
+  #carpool th:nth-child(3), #carpool td:nth-child(3) { width: 29%; text-align: left; }
+  #carpool th:nth-child(4), #carpool td:nth-child(4) { width: 12%; text-align: center; }
+  #carpool .status-badge {
+    max-width: 100%; padding: 4px 3px; font-size: 9px;
+    line-height: 1.2; white-space: normal; overflow-wrap: anywhere;
+  }
+}
+
+/* v8.3 mobile table refinements */
+@media(max-width:650px){
+ #checklist .compact-list th:nth-child(1),#checklist .compact-list td:nth-child(1){width:38%;text-align:left}
+ #checklist .compact-list th:nth-child(2),#checklist .compact-list td:nth-child(2){width:24%;text-align:center}
+ #checklist .compact-list th:nth-child(3),#checklist .compact-list td:nth-child(3){width:27%;text-align:left}
+ #checklist .compact-list th:nth-child(4),#checklist .compact-list td:nth-child(4){width:11%;text-align:center}
+ #checklist .compact-list th,#checklist .compact-list td{padding:6px 2px;font-size:10px}
+ #carpool .table-scroll.carpool-table{overflow-x:hidden}
+ #carpool .carpool-table table{min-width:0;width:100%;table-layout:fixed}
+ #carpool .carpool-table th,#carpool .carpool-table td{padding:6px 2px;font-size:10px;line-height:1.2;overflow-wrap:anywhere;white-space:normal}
+ #carpool .carpool-table th:nth-child(1),#carpool .carpool-table td:nth-child(1){width:38%}
+ #carpool .carpool-table th:nth-child(2),#carpool .carpool-table td:nth-child(2){width:22%}
+ #carpool .carpool-table th:nth-child(3),#carpool .carpool-table td:nth-child(3){width:28%}
+ #carpool .carpool-table th:nth-child(4),#carpool .carpool-table td:nth-child(4){width:12%}
+ #carpool .carpool-table .status-badge{font-size:9px;padding:3px 2px;max-width:100%;white-space:normal}
+ #campsite .campsite-table th,#campsite .campsite-table td{padding:7px 4px}
+}
+
+/* v8.4 mobile layout: explicit table sizing, no offscreen Owner/Who */
+@media(max-width:650px){
+ #checklist .app-card,#carpool .app-card{padding:12px 8px}
+ #checklist .check-section{min-width:0}
+ #checklist .compact-list,#carpool .table-scroll{width:100%;max-width:100%;overflow-x:hidden}
+ #checklist .compact-list table,#carpool .table-scroll table{width:100%!important;min-width:0!important;table-layout:fixed!important}
+ #checklist .compact-list th,#checklist .compact-list td,#carpool .table-scroll th,#carpool .table-scroll td{box-sizing:border-box;padding:7px 3px;font-size:10px;line-height:1.25;white-space:normal!important;overflow-wrap:anywhere;word-break:normal;vertical-align:middle}
+ #checklist .compact-list th:nth-child(1),#checklist .compact-list td:nth-child(1){width:36%}
+ #checklist .compact-list th:nth-child(2),#checklist .compact-list td:nth-child(2){width:25%}
+ #checklist .compact-list th:nth-child(3),#checklist .compact-list td:nth-child(3){width:29%}
+ #checklist .compact-list th:nth-child(4),#checklist .compact-list td:nth-child(4){width:10%}
+ #checklist .compact-list th:nth-child(5),#checklist .compact-list td:nth-child(5){display:none!important}
+ #carpool .table-scroll th:nth-child(1),#carpool .table-scroll td:nth-child(1){width:25%}
+ #carpool .table-scroll th:nth-child(2),#carpool .table-scroll td:nth-child(2){width:24%}
+ #carpool .table-scroll th:nth-child(3),#carpool .table-scroll td:nth-child(3){width:37%}
+ #carpool .table-scroll th:nth-child(4),#carpool .table-scroll td:nth-child(4){width:14%}
+ #checklist .status-badge,#carpool .status-badge{font-size:9px;padding:3px 2px;max-width:100%;white-space:normal!important;overflow-wrap:anywhere}
+}

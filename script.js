@@ -134,8 +134,8 @@ function renderChecklist(rows){
   const areas=[...new Set(rows.map(r=>r.Area).filter(Boolean))];
   host.innerHTML=areas.map(area=>{
     const areaRows=rows.filter(r=>r.Area===area);
-    const body=areaRows.map(r=>`<tr><td>${esc(r.Item)}</td><td>${esc(r.Req)}</td><td>${statusBadge(r.Status)}</td><td>${esc(r.Owner)}</td><td>${esc(r.Qty)}</td></tr>`).join('');
-    return `<details class="check-section" open><summary>${esc(area)} <span>${areaRows.length} items</span></summary><div class="table-scroll compact-list"><table><thead><tr><th>Item</th><th>Req</th><th>Status</th><th>Owner</th><th>Qty</th></tr></thead><tbody>${body}</tbody></table></div></details>`;
+    const body=areaRows.map(r=>`<tr><td>${esc(r.Item)}</td><td>${statusBadge(r.Status)}</td><td>${esc(r.Owner)}</td><td>${esc(r.Req)}</td><td>${esc(r.Qty)}</td></tr>`).join('');
+    return `<details class="check-section" open><summary>${esc(area)} <span>${areaRows.length} items</span></summary><div class="table-scroll compact-list"><table><thead><tr><th>Item</th><th>Status</th><th>Owner</th><th>Req</th><th>Qty</th></tr></thead><tbody>${body}</tbody></table></div></details>`;
   }).join('');
 }
 
@@ -167,7 +167,7 @@ async function loadExcelData(){
     renderRows('runners-body',runners,[{key:'#'},{key:'Name'},{key:'Payment',type:'payment'},{key:'Amount',type:'money'},{key:'Initials'},{key:'Average'},{key:'Email',type:'email'},{key:'Phone',type:'phone'}]);
     renderRows('sherpas-body',sherpas,[{key:'Name'},{key:'Email',type:'email'},{key:'Phone',type:'phone'},{key:'Role'}]);
     renderRows('emergency-body',emergency,[{key:'#'},{key:'Runner'},{key:'Emergency Contact'},{key:'Relation'},{key:'Phone',type:'phone'}]);
-    renderRows('tent-body',tent,[{key:'Item'},{key:'Required'},{key:'Status',type:'status'},{key:'Who'},{key:'Total'}]);
+    renderRows('tent-body',tent,[{key:'Item'},{key:'Status',type:'status'},{key:'Who'},{key:'Total'},{key:'Required'}]);
     renderRows('carpool-body',carpool,[{key:'Item'},{key:'Status',type:'status'},{key:'Who'},{key:'Total'}]);
     renderChecklist(checklist);
     renderLinks(links);
@@ -270,8 +270,8 @@ function relayRenderChecklist(rows){
   const areas=[...new Set(rows.map(r=>r.Area).filter(Boolean))];
   host.innerHTML=areas.map(area=>{
     const areaRows=rows.filter(r=>r.Area===area);
-    const body=areaRows.map(r=>`<tr><td>${relayEsc(r.Item)}</td><td>${relayEsc(r.Req)}</td><td>${relayStatusBadge(r.Status)}</td><td>${relayEsc(r.Owner)}</td><td>${relayEsc(r.Qty)}</td></tr>`).join('');
-    return `<details class="check-section" open><summary>${relayEsc(area)} <span>${areaRows.length} items</span></summary><div class="table-scroll compact-list"><table><thead><tr><th>Item</th><th>Req</th><th>Status</th><th>Owner</th><th>Qty</th></tr></thead><tbody>${body}</tbody></table></div></details>`;
+    const body=areaRows.map(r=>`<tr><td>${relayEsc(r.Item)}</td><td>${relayStatusBadge(r.Status)}</td><td>${relayEsc(r.Owner)}</td><td>${relayEsc(r.Req)}</td><td>${relayEsc(r.Qty)}</td></tr>`).join('');
+    return `<details class="check-section" open><summary>${relayEsc(area)} <span>${areaRows.length} items</span></summary><div class="table-scroll compact-list"><table><thead><tr><th>Item</th><th>Status</th><th>Owner</th><th>Req</th><th>Qty</th></tr></thead><tbody>${body}</tbody></table></div></details>`;
   }).join('');
 }
 function relayRenderLinks(rows){
@@ -301,7 +301,7 @@ async function loadRelayExcelData(){
     relayRenderRows('runners-body',runners,[{key:'#'},{key:'Name'},{key:'Payment',type:'payment'},{key:'Amount',type:'money'},{key:'Initials'},{key:'Average'},{key:'Email',type:'email'},{key:'Phone',type:'phone'}]);
     relayRenderRows('sherpas-body',sherpas,[{key:'Name'},{key:'Email',type:'email'},{key:'Phone',type:'phone'},{key:'Role'}]);
     relayRenderRows('emergency-body',emergency,[{key:'#'},{key:'Runner'},{key:'Emergency Contact'},{key:'Relation'},{key:'Phone',type:'phone'}]);
-    relayRenderRows('tent-body',tent,[{key:'Item'},{key:'Required'},{key:'Status',type:'status'},{key:'Who'},{key:'Total'}]);
+    relayRenderRows('tent-body',tent,[{key:'Item'},{key:'Status',type:'status'},{key:'Who'},{key:'Total'},{key:'Required'}]);
     relayRenderRows('carpool-body',carpool,[{key:'Item'},{key:'Status',type:'status'},{key:'Who'},{key:'Total'}]);
     relayRenderChecklist(checklist);
     relayRenderLinks(links);
