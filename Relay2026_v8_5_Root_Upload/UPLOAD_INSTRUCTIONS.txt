@@ -1,0 +1,1 @@
+v8.5: Upload index.html, script.js, styles.css and Relay2026_Data.xlsx directly into the Relay2026 repository ROOT. Do not upload the containing folder. Keep existing assets/ and CNAME.
