@@ -1,10 +1,1 @@
-Upload the CONTENTS of this folder to the ROOT of the Relay2026 GitHub repository.
-
-Replace:
-- index.html
-- styles.css
-- script.js
-- Relay2026_Data.xlsx
-- assets/
-
-Do not upload the outer folder itself.
+v8.5: Upload index.html, script.js, styles.css and Relay2026_Data.xlsx directly into the Relay2026 repository ROOT. Do not upload the containing folder. Keep existing assets/ and CNAME.

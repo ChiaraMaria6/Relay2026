@@ -123,7 +123,7 @@ function renderTeam(id, avgId, rows){
   if(!el)return;
   const active=rows.filter(r=>String(r.Name||'').toUpperCase()!=='DRAFT' && r['Runner #']!=='');
   el.innerHTML=active.map(r=>`<tr><td class="runner-num">${esc(r['Runner #'])}</td><td>${esc(r.Name)}</td><td>${esc(r.Ave)}</td></tr>`).join('')
-    + `<tr class="volunteer-row"><td></td><td>Volunteer</td><td>Pending</td></tr>`;
+    + `<tr class="volunteer-row"><td></td><td>Volunteer</td><td>${id === 'team-no-egrets' ? 'Natazha' : 'TBC'}</td></tr>`;
   const secs=active.map(r=>paceToSeconds(r.Ave)).filter(v=>v!=null);
   if(avgEl) avgEl.textContent=secs.length ? secondsToPace(secs.reduce((a,b)=>a+b,0)/secs.length) : '—';
 }
@@ -260,7 +260,7 @@ function relayRenderTeam(id, avgId, rows){
   if(!el)return;
   const active=rows.filter(r=>String(r.Name||'').toUpperCase()!=='DRAFT' && String(r['#']||r['Runner #']||'')!=='');
   el.innerHTML=active.map(r=>`<tr><td class="runner-num">${relayEsc(r['#']||r['Runner #'])}</td><td>${relayEsc(r.Name)}</td><td>${relayEsc(r.Ave)}</td></tr>`).join('')
-    + `<tr class="volunteer-row"><td></td><td>Volunteer</td><td>Pending</td></tr>`;
+    + `<tr class="volunteer-row"><td></td><td>Volunteer</td><td>${id === 'team-no-egrets' ? 'Natazha' : 'TBC'}</td></tr>`;
   const secs=active.map(r=>relayPaceToSeconds(r.Ave)).filter(v=>v!=null);
   if(avgEl) avgEl.textContent=secs.length ? relaySecondsToPace(secs.reduce((a,b)=>a+b,0)/secs.length) : '—';
 }
