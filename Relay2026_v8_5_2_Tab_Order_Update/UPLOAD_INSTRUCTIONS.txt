@@ -1,0 +1,1 @@
+Upload only index.html directly to the ROOT of GitHub repository ChiaraMaria6/Relay2026, replacing existing index.html. Do not upload the ZIP or a folder. This update changes navigation order only; do not replace Excel, script.js, or styles.css.
